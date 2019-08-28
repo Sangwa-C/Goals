@@ -72,11 +72,10 @@ export class GoalComponent implements OnInit {
       // Succesful API request
       this.quote = new Quote(data.author, data.quote, data.permalink)
   }
-//   ,err=>{
-//     this.quote = new Quote("Winston Churchill","Never never give up!", "www.ya.com")
-//     console.log("An error occurred")
-// }
-)
+   ,err=>{
+    this.quote = new Quote("Winston Churchill","Never never give up!", "www.ya.com")
+    console.log("An error occurred")
+  })
 
   }
 }
